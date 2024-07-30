@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+header {
+    background-color: #f5a623;
+    color: white;
+    padding: 15px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav h1 {
+    margin-left: 20px;
+}
+
+nav h1 a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.8em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #ffeb3b;
+    padding: 40px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+.btn-main {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f5a623;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.btn-main:hover {
+    background-color: #e59400;
+}
+
+.products {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.product-card p {
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+.product-card .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #f5a623;
+}
+
+.services {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.service-card {
+    background-color: #f5a623;
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.service-card p {
+    font-size: 1em;
+}
+
+.pricing {
+    background-color: #ffeb3b;
+    padding: 40px 20px;
+}
+
+.pricing h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.pricing table {
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.pricing th, .pricing td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.pricing th {
+    background-color: #f5a623;
+    color: white;
+}
+
+.pricing tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 40px 20px;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="number"],
+.contact select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+.contact input[type="submit"] {
+    background-color: #f5a623;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+
+.contact input[type="submit"]:hover {
+    background-color: #e59400;
+}
+
+footer {
+    background-color: #f5a623;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+}
+
+/* Media Queries para Responsividad */
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .pricing table {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+
+    .contact input[type="submit"] {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .pricing table th, .pricing table td {
+        padding: 8px;
+    }
+}
